@@ -91,7 +91,8 @@ function addProdukToCart(barang, harga, foto) {
                             <!-- Remove cart -->
                             <i class='bx bxs-trash cart-remove'></i>`;
     cartShopBox.innerHTML = cartBoxContent
-    cartItem.append(cartShopBox)
+    // cartItem.append(cartShopBox)
+    cartItem.insertBefore(cartShopBox, cartItem.firstChild)
     cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem)
     cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged)
 }

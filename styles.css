@@ -86,8 +86,11 @@ header {
     background: var(--bg-color);
     box-shadow: -2px 0 4px hsl(0, 4%, 10%);
     transition: 0.3s;
+    overflow-y: scroll;
+    height: 100px;
 
 }
+
 
 .cart-title {
     text-align: center;
