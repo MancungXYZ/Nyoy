@@ -51,13 +51,19 @@ function ready() {
     document.getElementsByClassName('btn-buy')[0].addEventListener('click', buyButtonClicked);
 }
 //buy button
-function buyButtonClicked() {
-    alert('Your Order is placed')
-    var cartContent = document.getElementsByClassName('cart-content')[0]
-    while (cartContent.hasChildNodes()) {
-        cartContent.removeChild(cartContent.firstChild);
+function buyButtonClicked(event) {
+    Swal.fire(
+        'SWEET!',
+        'Terima kasih telah berbelanja di donat nyoy',
+        'success'
+      )
+    var cartBox = document.getElementsByClassName('cart-box')[0]
+    for (var i = cart.childNodes.length - 1; i>= 0; i--) {
+        cartBox.removeChild(cartBox.childNodes[i])
+        
     }
-    updateTotal();
+    updateTotal()
+    
 }
 //Add cart
 function addCartClicked (event) {
@@ -67,6 +73,7 @@ function addCartClicked (event) {
     var harga = produk.getElementsByClassName('price')[0].innerText
     var foto = produk.getElementsByClassName('product-img')[0].src
     addProdukToCart(barang, harga, foto);
+    updateTotal();
 
 }
 
@@ -95,6 +102,7 @@ function addProdukToCart(barang, harga, foto) {
     cartItem.insertBefore(cartShopBox, cartItem.firstChild)
     cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem)
     cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged)
+    
 }
 
 

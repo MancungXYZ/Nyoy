@@ -45,7 +45,6 @@ header {
     box-shadow: 0 1px 4px hsl(0, 4%, 10%);
     z-index: 100;
 }
-
 .nav {
     display: flex;
     align-items: center;
@@ -54,7 +53,8 @@ header {
 }
 
 .logo {
-    font-size: 1rem;
+    margin-right: auto;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
 }
@@ -261,5 +261,84 @@ header {
     }
     .shop {
         margin-top: 2rem !important;
+    }
+
+    .cart-title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 3rem;
+    }
+    .cart-active{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+        background: var(--bg-color);
+        box-shadow: -2px 0 4px hsl(0, 4%, 10%);
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 100px;
+    }
+    .cart-img {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        padding: 10px;
+    
+    }
+    .cart-product-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+    
+    }
+    
+    .cart-product-price {
+        font-weight: 500;
+        font-size: 2rem;
+    
+    }
+    
+    .cart-quantity {
+        border: 1px solid var(--text-color);
+        outline-color: var(--text-color) ;
+        width: 2.4rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .cart-remove {
+        font-size: 35px;
+        cursor: pointer;
+    }
+    
+    .total {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        border-top: 1px solid;
+    }
+    
+    .total-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .total-price {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .btn-buy {
+        display: flex;
+        margin: 1.5rem auto 0 auto;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 500;
+        background: red;
+        color: #fff;
+        cursor: pointer;
     }
 }
