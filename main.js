@@ -52,17 +52,18 @@ function ready() {
 }
 //buy button
 function buyButtonClicked(event) {
-    Swal.fire(
-        'SWEET!',
-        'Terima kasih telah berbelanja di donat nyoy',
-        'success'
-      )
+    
     var cartBox = document.getElementsByClassName('cart-box')[0]
     for (var i = cart.childNodes.length - 1; i>= 0; i--) {
         cartBox.removeChild(cartBox.childNodes[i])
         
     }
     updateTotal()
+    Swal.fire(
+        'SWEET!',
+        'Terima kasih telah berbelanja di donat nyoy',
+        'success'
+      )
     
 }
 //Add cart

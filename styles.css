@@ -262,7 +262,22 @@ header {
     .shop {
         margin-top: 2rem !important;
     }
+}
 
+@media (max-width: 576px) {
+    .nav {
+        padding: 15px;
+    }
+    section {
+        padding: 3rem 0 2rem;
+    }
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .shop {
+        margin-top: 2rem !important;
+    }
     .cart-title {
         text-align: center;
         font-size: 1.5rem;
@@ -283,21 +298,23 @@ header {
         height: 100px;
     }
     .cart-img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         object-fit: contain;
         padding: 10px;
     
     }
     .cart-product-title {
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
+        margin-left: 20px;
     
     }
     
     .cart-product-price {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-left: 20px;
     
     }
     
@@ -306,7 +323,8 @@ header {
         outline-color: var(--text-color) ;
         width: 2.4rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-left: 20px;
     }
     
     .cart-remove {
