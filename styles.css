@@ -298,33 +298,33 @@ header {
         height: 100px;
     }
     .cart-img {
-        width: 200px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
         object-fit: contain;
         padding: 10px;
     
     }
     .cart-product-title {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-transform: uppercase;
-        margin-left: 20px;
+        margin-left: 45px;
     
     }
     
     .cart-product-price {
         font-weight: 500;
-        font-size: 1.5rem;
-        margin-left: 20px;
+        font-size: 1rem;
+        margin-left: 45px;
     
     }
     
     .cart-quantity {
         border: 1px solid var(--text-color);
         outline-color: var(--text-color) ;
-        width: 2.4rem;
+        width: 2rem;
         text-align: center;
-        font-size: 1.5rem;
-        margin-left: 20px;
+        font-size: 1rem;
+        margin-left: 45px;
     }
     
     .cart-remove {
