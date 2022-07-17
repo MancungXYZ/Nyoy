@@ -52,18 +52,18 @@ function ready() {
 }
 //buy button
 function buyButtonClicked(event) {
-    
+    Swal.fire(
+        'SWEET!',
+        'Terima kasih telah berbelanja di donat nyoy',
+        'success'
+      )
     var cartBox = document.getElementsByClassName('cart-box')[0]
     for (var i = cart.childNodes.length - 1; i>= 0; i--) {
         cartBox.removeChild(cartBox.childNodes[i])
         
     }
     updateTotal()
-    Swal.fire(
-        'SWEET!',
-        'Terima kasih telah berbelanja di donat nyoy',
-        'success'
-      )
+    
     
 }
 //Add cart
@@ -86,7 +86,7 @@ function addProdukToCart(barang, harga, foto) {
     var cartItemName = cartItem.getElementsByClassName('cart-product-title')
     for (var i=0; i < cartItemName.length; i++) {
         if (cartItemName[i].innerText == barang) {
-            alert('Anda telah menambahkan kedalam keranjang')
+            Swal.fire('Anda telah menambahkan kedalam keranjang')
             return;
         }
     }
